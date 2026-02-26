@@ -146,7 +146,7 @@
             top: 64px; 
             left: 0; 
             right: 0; 
-            bottom: 0px; 
+            bottom: 100px; 
             background-color: #0f172a !important; 
             z-index: 1;
         }
@@ -156,22 +156,25 @@
         .blocklyToolboxDiv { 
             background-color: #1f2937 !important; 
             border: 1px solid rgba(255, 255, 255, 0.15); 
+            border-bottom: none !important;
             position: absolute !important; 
-            bottom: 1px !important; 
-            left: 50% !important; 
-            transform: translateX(-50%) !important; 
+            bottom: 0px !important; 
+            left: 0 !important; 
+            right: 0 !important;
+            transform: none !important; 
             top: auto !important; 
-            height: 70px !important; 
-            width: fit-content !important; 
-            min-width: 300px; 
+            height: auto !important; 
+            width: 100% !important; 
+            min-width: unset !important;
             display: flex !important; 
             flex-direction: row !important; 
+            flex-wrap: wrap !important;
             align-items: center; 
             justify-content: center; 
-            border-radius: 16px; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.6); 
+            border-radius: 16px 16px 0 0 !important; 
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.5); 
             z-index: 40; 
-            padding: 0 10px; 
+            padding: 8px 10px 10px 10px !important;
         }
         .blocklyTreeRow { height: 48px !important; padding: 0 12px !important; margin: 0 4px !important; border-radius: 10px !important; cursor: pointer; display: flex; align-items: center; justify-content: center; border: 1px solid transparent; }
         .blocklyTreeLabel { font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 13px !important; color: white !important; }
@@ -862,7 +865,7 @@ select, option{
   --joystick-ui-y-desktop: 300px;
 
   --joystick-ui-x-mobile: 2px;
-  --joystick-ui-y-mobile: 480px;
+  --joystick-ui-y-mobile: 420px;
 
   --joystick-ui-x: var(--joystick-ui-x-desktop);
   --joystick-ui-y: var(--joystick-ui-y-desktop);

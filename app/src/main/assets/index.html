@@ -33,7 +33,10 @@
             font-family: 'Segoe UI', Roboto, sans-serif;
             background-color: #0f172a;
             color: white;
-            overflow: hidden; 
+            overflow: hidden;
+            height: 100vh;
+            height: 100dvh;
+            max-height: 100dvh;
         }
         
         .glass-header {
@@ -146,7 +149,7 @@
             top: 64px; 
             left: 0; 
             right: 0; 
-            bottom: 100px; 
+            bottom: 0; 
             background-color: #0f172a !important; 
             z-index: 1;
         }
@@ -937,7 +940,7 @@ select, option{
 
 </style>
 </head>
-<body class="h-screen w-screen flex flex-col">
+<body class="w-screen flex flex-col">
 
     <header class="h-16 glass-header flex items-center justify-between px-4 z-50 absolute top-0 w-full">
         <div class="flex items-center gap-2">

@@ -3,7 +3,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>RoboScratch</title>
     <link rel="icon" href="data:,">
     
@@ -174,7 +174,7 @@
             border-radius: 16px 16px 0 0 !important; 
             box-shadow: 0 -4px 20px rgba(0,0,0,0.5); 
             z-index: 40; 
-            padding: 8px 10px 10px 10px !important;
+            padding: 8px 10px calc(10px + env(safe-area-inset-bottom, 0px)) 10px !important;
         }
         .blocklyTreeRow { height: 48px !important; padding: 0 12px !important; margin: 0 4px !important; border-radius: 10px !important; cursor: pointer; display: flex; align-items: center; justify-content: center; border: 1px solid transparent; }
         .blocklyTreeLabel { font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 13px !important; color: white !important; }
@@ -864,8 +864,8 @@ select, option{
   --joystick-ui-x-desktop: -27px;
   --joystick-ui-y-desktop: 300px;
 
-  --joystick-ui-x-mobile: 2px;
-  --joystick-ui-y-mobile: 420px;
+  --joystick-ui-x-mobile: 0px;
+  --joystick-ui-y-mobile: 400px;
 
   --joystick-ui-x: var(--joystick-ui-x-desktop);
   --joystick-ui-y: var(--joystick-ui-y-desktop);
